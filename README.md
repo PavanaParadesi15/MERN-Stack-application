@@ -14,6 +14,7 @@ This is a MERN Stack application, using CI/CD will be deployed on EKS Cluster on
 * Its very simple to write  docker files for MERN Stack applications for both frontend and backend as they are from same java family
 * For Database there is no docker image creation and no need to write docker file, I am using publicly available mongo DB image. 
 
+![Three-Tier](https://github.com/user-attachments/assets/a85560fd-8f91-468a-aa66-5f303f8d9c00)
 
 
 
