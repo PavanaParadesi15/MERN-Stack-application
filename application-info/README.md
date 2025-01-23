@@ -107,7 +107,20 @@ sudo snap install helm --classic
 helm version
 ```
 
+* We are using single jenkins node architecture, where jenkins is used as both master  and agent/slave 
+* Install plugins in Jenkins. As I am running terraform scripts through jenkins and create infra on AWS like EKS Cluster, VPC using terraform scripts
+1. AWS Credentials - Allows storing Amazon IAM credentials within the Jenkins Credentials API. Store Amazon IAM access keys (AWSAccessKeyId and AWSSecretKey) within the Jenkins Credentials API
+2. Pipeline: AWS steps 
+3. Pipeline: Stage view
+4. Terraform plugin
 
+* Add AWS security credentials (access key and secrect access key) . Manage Jenkins -> Credentials
+* Add Terraform Path . Manage Jenkins -> Tools -> Terraform -> Add terraform .
+
+
+# Create Jump Server
+* EKS cluster and nodes are in private subnet. We cannot access the private cluster by default.
+* So to interact with these, we are creating a Jump server within the same VPC as EKS cluster to communicate with EKS cluster.   
 
 
 
